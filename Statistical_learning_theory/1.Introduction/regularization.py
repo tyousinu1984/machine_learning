@@ -38,8 +38,6 @@ def residuals_L2(p, x, y):
                     np.sqrt(0.5 * REGULARIZATION * np.square(p)))
     return ret
 
-def rmse(p,x,coefficient):
-    p = np.poly1d(coefficient)
 
 def main():
     x = np.linspace(0, 1, 10)
@@ -64,9 +62,9 @@ def main():
     print('Fitting Parameters with L2:', p_lsq_L2[0])
 
     #可視化
-    plt.plot(x_points, real_func(x_points), label='real')
+    plt.plot(x_points, real_func(x_points), label='real',color='black')
 
-    plt.plot(x_points, fit_func(p_lsq[0], x_points), label='without regularizer')
+    plt.plot(x_points, fit_func(p_lsq[0], x_points), label='without regularizer',color='red')
     plt.plot(x_points,fit_func(p_lsq_L1[0], x_points),label='L1')
     plt.plot(x_points,fit_func(p_lsq_L2[0], x_points),label='L2')
     plt.plot(x, y, 'bo', label='noise')
