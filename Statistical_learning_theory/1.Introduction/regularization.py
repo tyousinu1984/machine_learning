@@ -57,7 +57,6 @@ def main():
     p_lsq_L1  = leastsq(residuals_L1, p_init, args=(x, y))
     p_lsq_L2  = leastsq(residuals_L2, p_init, args=(x, y))
     print('Fitting Parameters without regularizer:', p_lsq[0])
-    print('Fitting Parameters without regularizer:', p_lsq[0])
     print('Fitting Parameters with L1:', p_lsq_L1[0])
     print('Fitting Parameters with L2:', p_lsq_L2[0])
 
