@@ -1,3 +1,6 @@
+#Author:XYZ
+#Date:2020-09-20
+
 #　最小二乗法のモデル推定
 
 import numpy as np
