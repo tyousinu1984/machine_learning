@@ -1,7 +1,7 @@
 
 ### 最小二乗法
 最小二乗法を使用して曲線を近似する
-多項式によって曲線を近似する、多項式の次数N=9の時、過学習が確認された。
+多項式によって曲線を近似する、多項式の次数N=6から、過学習が確認された。
 ![avatar](https://github.com/tyousinu1984/machine_learning/blob/master/Statistical_learning_theory/1.Introduction/Figure_1.png)
 ### 正則化
 
