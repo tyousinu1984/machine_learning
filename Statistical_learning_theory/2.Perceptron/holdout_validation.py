@@ -40,8 +40,8 @@ def load_data():
 def holdout_validation_data_set(data):
     X, y = data[:,:-1], data[:,-1]
     y = np.array([1 if i == 1 else -1 for i in y])
-    X_train, y_train, X_test, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
-    return X_train, y_train, X_test, y_test
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
+    return X_train, X_test, y_train, y_test
 
 def model_test(X_test,y_test,w,b):
     error_count = 0
