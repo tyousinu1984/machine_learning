@@ -31,7 +31,7 @@ def main():
     y_ = real_func(x)
     y = [temp + np.random.normal(0, 0.1) for temp in y_]
 
-    # #N为多項式の次数
+    # #Nは多項式の次数
     # N = 9
     # # 多项式パラメータを初期化
     # p_init = np.random.rand(N + 1)
@@ -45,7 +45,7 @@ def main():
     # plt.plot(x, y, 'bo', label='noise')
     # plt.legend()
     # plt.show()
-    # N为多項式の次数
+    # Nは多項式の次数
     fig = plt.figure()
     fig.subplots_adjust(hspace=0.4, wspace=0.4)
     for N in range(1, 10):

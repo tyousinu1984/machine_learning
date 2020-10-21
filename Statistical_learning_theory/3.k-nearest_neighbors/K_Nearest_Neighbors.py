@@ -8,7 +8,7 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from collections import Counter
 
-class K_Nearest_Neighbors:
+class K_Nearest_Neighbors(object):
     def __init__(self, X_train, y_train, n_neighbors=3, p=2):
         """
         parameter: n_neighbors 個点
