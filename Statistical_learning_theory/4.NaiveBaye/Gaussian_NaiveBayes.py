@@ -62,7 +62,6 @@ class GaussianNaiveBayes:
             for label, value in data.items()
         }
 
-
     # 確率計算
     def calculate_probabilities(self, input_data):
         # summaries:{0.0: [(5.0, 0.37),(3.42, 0.40)], 1.0: [(5.8, 0.449),(2.7, 0.27)]}
